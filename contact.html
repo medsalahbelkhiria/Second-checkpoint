@@ -3,7 +3,10 @@
 
 <head>
     <title>Contact</title>
-    <style>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- <style>
         header {
             background-color: #1b262c;
             height: 40px;
@@ -44,15 +47,15 @@
             margin-bottom: 20px;
             text-align: center;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html"> Home</a>
-            <a href="projects.html"> Projects</a>
-            <a href="contact.html"> Contact</a>
+            <a href="index.html" class="NavBarElement"> Home</a>
+            <a href="projects.html" class="NavBarElement"> Projects</a>
+            <a href="contact.html" class="NavBarElement"> Contact</a>
         </nav>
     </header>
     <main>
@@ -64,21 +67,27 @@
         </ul>
 
         <hr>
-        <form action="mailto:salahbelkhiria@outlook.com">
-            <label> Your name:</label>
-            <input type="text"><br>
-            <label> Your Email:</label>
-            <input type="text"><br>
-            <label> Your message: </label>
-            <textarea name="Your message please : " rows="8" cols="30"></textarea><br>
-            <input type="submit">
-        </form>
+        <fieldset>
+            <h2>Contact me</h2>
+            <form action="mailto:salahbelkhiria@outlook.com">
+                <label> First name:</label>
+                <input type="text" required><br>
+                <label> Last name:</label>
+                <input type="text" required><br>
+                <label> Email adress:</label>
+                <input type="email" placeholder="example@domain.com" required><br>
+                <label> Message: </label>
+                <textarea name="Your message please : " rows="8" cols="30" required></textarea><br>
+                <input type="submit" value="Send email">
+                <input type="reset" value="Reset">
+            </form>
+        </fieldset>
 
     </main>
 
     <footer>
         <hr>
-        <h5> By Salah Belkhiria</h5>
+        <h6> By Salah Belkhiria</h6>
     </footer>
 
 
