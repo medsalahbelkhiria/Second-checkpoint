@@ -6,48 +6,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-    <!-- <style>
-        header {
-            background-color: #1b262c;
-            height: 40px;
-            text-align: right;
-        }
 
-        body {
-            background-color: #0f4c81;
-            font-family: sans-serif;
-            margin: 0;
-        }
-
-        a {
-            padding: 20px;
-            color: #fbd46d;
-        }
-
-        textarea {
-            margin-top: 10px;
-        }
-
-        input {
-            margin-top: 10px
-        }
-
-        label {
-            margin-left: 20px;
-            margin-right: 15px;
-            padding-top: 10px;
-
-        }
-
-        h1 {
-            margin-left: 20px;
-        }
-
-        h5 {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-    </style> -->
 </head>
 
 <body>
@@ -68,19 +27,31 @@
 
         <hr>
         <fieldset>
-            <h2>Contact me</h2>
-            <form action="mailto:salahbelkhiria@outlook.com">
-                <label> First name:</label>
-                <input type="text" required><br>
-                <label> Last name:</label>
-                <input type="text" required><br>
-                <label> Email adress:</label>
-                <input type="email" placeholder="example@domain.com" required><br>
-                <label> Message: </label>
-                <textarea name="Your message please : " rows="8" cols="30" required></textarea><br>
-                <input type="submit" value="Send email">
-                <input type="reset" value="Reset">
-            </form>
+            <div class="formulaire">
+                <h2 class="contact-title">Contact me</h2>
+                <form action="mailto:salahbelkhiria@outlook.com">
+                    <label class="inputName"> First name:</label>
+
+                    <input class="form" type="text" required placeholder="First name"><br>
+                    <label class="inputName"> Last name:</label>
+                    <input class="form" type="text" required placeholder="Last name"><br>
+                    <label class="inputName"> Email adress:</label>
+                    <input class="form" type="email" placeholder="example@domain.com" required><br>
+                    <div class="message">
+                        <label class="inputName"> Message: </label>
+                        <textarea class="form" name="Your message please : " rows="8" cols="30" required
+                            placeholder="Your message here"></textarea><br>
+                    </div>
+
+                    <div class="buttons">
+                        <input class="button" type="submit" value="Send email">
+                        <input class="button" type="reset" value="Reset">
+                    </div>
+
+
+                </form>
+            </div>
+
         </fieldset>
 
     </main>
